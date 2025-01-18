@@ -74,21 +74,13 @@ EOF
 
 ---
 
-## Divisão de Tarefas
-
-### Participante 1: Entrada de Dados e Cálculos
+## Como funciona o programa 
 
 - Leitura de coordenadas (arquivo ou entrada do usuário).
 - Implementação do algoritmo **Nearest Neighbor**.
-
-### Participante 2: Validações e Testes
-
 - Garantir que todos os postos sejam visitados apenas uma vez.
 - Validar os dados de entrada e saída.
 - Testar com diferentes cenários de arquivos de entrada.
-
-### Participante 3: Exibição e Interface
-
 - Exibição da rota e distância no terminal.
 - Representação visual básica ou colorida da rota.
 - (Opcional) Implementação da interface com `ncurses`.
