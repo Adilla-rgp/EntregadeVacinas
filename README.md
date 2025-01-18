@@ -7,16 +7,6 @@ Além disso, o programa conta com uma interface baseada em terminal para visuali
 
 ---
 
-## Funcionalidades
-
-- Entrada de coordenadas de postos de saúde fornecidas pelo usuário ou por arquivo.
-- Cálculo da rota otimizada para a entrega de vacinas.
-- Exibição da rota no terminal com visualização básica ou colorida.
-- Representação simplificada do "mapa" das cidades e da rota.
-- (Opcional) Uso da biblioteca `ncurses` para criar uma interface interativa no terminal.
-
----
-
 ## Como Executar
 
 ### Requisitos
