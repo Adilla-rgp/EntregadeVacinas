@@ -7,7 +7,7 @@ int main()
     char arquivo_Pcoordenadas[200]; // Array que armazena o nome dos arquivos
     Posto *postos = NULL;           // Ponteiro para alocação de memória
     int totalPostos = 0;            // Armazena o número total de postos lidos
-    int capacidade = 200;           // Capacidade inicial da array de postos
+    int capacidade = 200; 
 
     // Entrada do usuário
     printf("\n(Antes de comecar, verifique se os arquivos estão no mesmo diretorio que o programa!)\n\nInsira o nome do arquivo: ");
