@@ -1,26 +1,15 @@
 {
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "name": "Run C",
-            "type": "cppdbg",
-            "request": "launch",
-            "program": "${fileDirname}/${fileBasenameNoExtension}",
-            "args": [],
-            "stopAtEntry": false,
-            "cwd": "${workspaceFolder}",
-            "environment": [],
-            "externalConsole": false,
-            "MIMode": "gdb",
-            "setupCommands": [
-                {
-                    "description": "Enable pretty-printing for gdb",
-                    "text": "-enable-pretty-printing",
-                    "ignoreFailures": true
-                }
-            ],
-            "preLaunchTask": "Compile C",
-            "miDebuggerPath": "C:/MinGW/bin/gdb.exe"
-        }
-    ]
+    "label": "compile C",
+    "type": "shell",
+    "command": "gcc",
+    "args": [
+        "main.c",
+        "output/arquivos/leitura.c",
+        "-o",
+        "output/main.exe"
+    ],
+    "group": {
+        "kind": "build",
+        "isDefault": true
+    }
 }
