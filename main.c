@@ -26,7 +26,7 @@ int main()
     // Exibição do resultado
     printf("\nPostos encontrados: %d\n", totalPostos);  // Mostra a quantidade de postos encontrados no arquivo
     for (int i = 0; i < totalPostos; i++) {  // Imprime as coordenadas e o número do posto
-        printf("\nPosto %d:\t\t (%.2lf , %.2lf)\n", postos[i].endereco, postos[i].x, postos[i].y);
+        printf("\nPosto %d:\t\t (%lf , %lf)\n", postos[i].endereco, postos[i].x, postos[i].y);
     }
 
     // Liberação de memória
