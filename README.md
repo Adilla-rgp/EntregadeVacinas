@@ -20,7 +20,7 @@ Este projeto simula a logística de entrega de vacinas, otimizando a rota de um 
 1. Clone este repositório:
 
    ```bash
-   git clone https://github.com/seu_usuario/entrega-de-vacinas.git
+   git clone https://github.com/Adilla-rgp/EntregadeVacinas.git
    cd entrega-de-vacinas
    ```
 
@@ -30,19 +30,12 @@ Este projeto simula a logística de entrega de vacinas, otimizando a rota de um 
    gcc -o entrega main.c componentes/algoritmo.c componentes/leitura.c -lm
    ```
 
-   - Caso utilize `ncurses`:
-     ```bash
-    gcc -o entrega main.c componentes/algoritmo.c componentes/leitura.c -lm -lncurses
-     ```
-
 3. Execute o programa:
 
    ```bash
    ./entrega.exe
    ```
-
----
-
+   
 ## Estrutura do Projeto
 
 - **componentes**: Código principal do projeto.
@@ -57,8 +50,6 @@ Exemplo de arquivo de coordenadas:
 ...
 EOF
 ```
-
----
 
 ## Como funciona o programa 
 
