@@ -11,5 +11,7 @@ typedef struct {
 
 // Função que lê o arquivo de coordenadas e preenche a estrutura de postos
 int lerArquivo(const char *arquivo, Posto **postos, int *totalPostos, int capacidade);
+void nearest_neighbor(Posto postos[], int totalPostos, int *rota);
+double calcular_distancia_total(Posto postos[], int *rota, int totalPostos); 
 
 #endif // LEITURA_H
