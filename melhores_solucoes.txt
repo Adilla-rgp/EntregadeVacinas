@@ -1,0 +1,13 @@
+Melhores opções de rota para os cenários dados:
+
+att48: 40526.421056  
+
+berlin52:980.918279 
+
+burma14: 38.688108
+
+ch150: 8194.614332
+
+lin318: 54033.576773
+
+maranhao10: 8.710910
