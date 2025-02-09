@@ -21,13 +21,14 @@ Este projeto simula a logística de entrega de vacinas, otimizando a rota de um 
 
    ```bash
    git clone https://github.com/Adilla-rgp/EntregadeVacinas.git
-   cd entrega-de-vacinas
+   cd EntregadeVacinas
+   cd output (opcional)
    ```
 
 2. Compile o código:
 
    ```bash
-   gcc -o entrega main.c componentes/algoritmo.c componentes/leitura.c -lm
+   gcc -o entrega output/main.c output/componentes/algoritmo.c output/componentes/leitura.c -lm
    ```
 
 3. Execute o programa:
