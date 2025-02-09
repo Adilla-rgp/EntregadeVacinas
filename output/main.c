@@ -17,6 +17,13 @@ int main() {
     char nomeArquivo[200];
     
     if (opcao == 1) {
+        printf("Aqui está uma lista dos arquivos disponíveis para leitura:\n");
+        printf("1. att48.txt\n");
+        printf("2. berlin52.txt\n");
+        printf("3. burma14.txt\n");
+        printf("4. ch150.txt\n");
+        printf("5. lin318.txt\n");
+        printf("6. maranhao10.txt\n");
         printf("Digite o nome do arquivo de coordenadas: ");
         scanf("%199s", nomeArquivo);
         
