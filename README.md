@@ -21,19 +21,24 @@ Este projeto simula a logística de entrega de vacinas, otimizando a rota de um 
 
    ```bash
    git clone https://github.com/Adilla-rgp/EntregadeVacinas.git
-   cd EntregadeVacinas
+
    ```
 
+    ```bash
+   cd EntregadeVacinas
+   cd output
+   ```
+  
 2. Compile o código:
 
    ```bash
-   gcc -o entrega output/main.c output/componentes/algoritmo.c output/componentes/leitura.c -lm
+   gcc -o output.exe main.c componentes/algoritmo.c componentes/algoritmo.h componentes/leitura.c componentes/leitura.h
    ```
 
 3. Execute o programa:
 
    ```bash
-   ./entrega.exe
+   ./output.exe
    ```
    
 ## Estrutura do Projeto
@@ -44,9 +49,12 @@ Este projeto simula a logística de entrega de vacinas, otimizando a rota de um 
 Exemplo de arquivo de coordenadas:
 
 ```
-1 44.303 2.549 # São Luís
-2 43.463 2.447 # Imperatriz
-3 44.408 3.385 # Caxias
+ 44.303 2.549 
+ 43.463 2.447 
+ 44.408 3.385
+ 45.248 3.783 
+ 43.356 2.887
+ 45.903 3.251 
 ...
 EOF
 ```
@@ -70,9 +78,17 @@ EOF
 Arquivo `maranhao10.txt`:
 
 ```
-1 44.303 2.549 # São Luís
-2 43.463 2.447 # Imperatriz
-3 44.408 3.385 # Caxias
+ 44.303 2.549 
+ 43.463 2.447 
+ 44.408 3.385
+ 45.248 3.783 
+ 43.356 2.887
+ 45.903 3.251 
+ 44.568 2.578 
+ 46.094 3.873
+ 43.812 2.932 
+ 43.479 2.466 
+
 ...
 EOF
 ```
