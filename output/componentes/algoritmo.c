@@ -49,6 +49,7 @@ void construir_rota(Posto postos[], int totalPostos, int rota[], int visitado[],
     for (int j = 0; j < totalPostos; j++) {
         if (!visitado[j]) {
             double distancia = calcular_distancia(postos[atual], postos[j]);
+            printf("Distancia entre o posto %d e o posto %d = %f\n", atual, j, distancia);
             if (distancia < menorDistancia) {
                 menorDistancia = distancia;
                 proximo = j;
