@@ -4,6 +4,10 @@
 #include "componentes/algoritmo.h"
 
 int main() {
+
+    int programa;
+
+    do {
     int opcao;
     printf("Escolha uma opcao:\n");
     printf("1 - Ler arquivo\n");
@@ -17,7 +21,7 @@ int main() {
     char nomeArquivo[200];
     
     if (opcao == 1) {
-        printf("Aqui está uma lista dos arquivos disponíveis para leitura:\n");
+        printf("Aqui esta uma lista dos arquivos disponíveis para leitura:\n");
         printf("1. att48.txt\n");
         printf("2. berlin52.txt\n");
         printf("3. burma14.txt\n");
@@ -28,13 +32,13 @@ int main() {
         scanf("%199s", nomeArquivo);
         
         if (lerArquivo(nomeArquivo, &postos, &totalPostos, capacidadeInicial) != 0) {
-            printf("Erro ao ler o arquivo de coordenadas.\n");
+            printf("\nErro ao ler o arquivo de coordenadas.\n");
             return 1;
         }
     } else if (opcao == 2) {
         inserir_coordenadas(&postos, &totalPostos);
     } else {
-        printf("Opcao invalida.\n");
+        printf("\nOpcao invalida.\n");
         return 1;
     }
     
@@ -45,7 +49,7 @@ int main() {
     
     int *rota = malloc((totalPostos + 1) * sizeof(int));
     if (rota == NULL) {
-        printf("Erro de alocacao de memoria para a rota.\n");
+        printf("\nErro de alocacao de memoria para a rota.\n");
         free(postos);
         return 1;
     }
@@ -57,9 +61,20 @@ int main() {
     printf("\nRota calculada:\n");
     imprimir_rota(postos, rota, totalPostos);
     printf("\nDistancia total percorrida: %.6lf\n", distanciaTotal);
-    
+
     free(rota);
     free(postos);
+
+    //menu final de decisões 
+    printf("\n\n**********************************");
+    printf("\nDigite 1 para calcular nova rota \nDigite 0 para sair do programa.\n");
+    scanf("%d", &programa);
+
+    if(programa != 0  && programa != 1)
+        printf("\nErro: entrada invalida. \tDigite 1 ou 0!");
+
+} while(programa==1);
+    
     
     return 0;
 }
